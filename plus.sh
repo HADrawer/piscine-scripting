@@ -1,3 +1,4 @@
 #!/bin/bash
 
-expr "$1" + "$2"
+result=$(expr "$1" + "$2")
+printf "%s\n" "$result"
