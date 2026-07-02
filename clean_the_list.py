@@ -2,7 +2,7 @@ def clean_list(shopping_list):
     if len(shopping_list) == 0:
         return []
 
-    if "milk" not in shopping_list:
+    if not any(item.strip().lower() == "milk" for item in shopping_list):
         shopping_list.append("milk")
 
     cleaned_list = []
